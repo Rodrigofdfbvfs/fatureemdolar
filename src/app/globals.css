@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 212 82% 11%;
+    --foreground: 0 0% 98%;
+    --card: 0 40% 15%;
+    --card-foreground: 0 0% 98%;
+    --primary: 3 100% 50%; /* Ferrari Red */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 50% 25%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 30% 20%;
+    --muted-foreground: 0 0% 63%;
+    --accent: 212 82% 22%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 9 100% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 40% 25%;
+    --input: 0 40% 25%;
+    --ring: 0 84% 50%;
+    --radius: 0.8rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+    background-color: hsl(var(--background));
+  }
+}
+
+@layer components {
+  .gradient-border-badge::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px; 
+    padding: 1px; 
+    background: hsl(var(--primary)); 
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+  }
+}
