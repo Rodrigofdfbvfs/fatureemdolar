@@ -10,6 +10,7 @@ import FaqSection from '@/components/sections/faq-section';
 import Footer from '@/components/footer';
 import GuaranteesSection from '@/components/sections/guarantees-section';
 import VideoFeedbackSection from '@/components/sections/video-feedback-section';
+import VslSection from '@/components/sections/vsl-section';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <UrgencyBanner />
+        <VslSection />
         <PainPointsSection />
         <BenefitsSection />
         <WhoAmISection />
