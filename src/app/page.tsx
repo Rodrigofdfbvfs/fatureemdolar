@@ -9,6 +9,7 @@ import FeedbackSection from '@/components/sections/feedback-section';
 import FaqSection from '@/components/sections/faq-section';
 import Footer from '@/components/footer';
 import GuaranteesSection from '@/components/sections/guarantees-section';
+import VideoFeedbackSection from '@/components/sections/video-feedback-section';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <BenefitsSection />
         <WhoAmISection />
         <SocialProofSection />
+        <VideoFeedbackSection />
         <GuaranteesSection />
         <FinalCtaSection />
         <FeedbackSection />
