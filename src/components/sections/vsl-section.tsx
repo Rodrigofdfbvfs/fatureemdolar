@@ -12,7 +12,7 @@ export default function VslSection() {
             Dê o play e veja o caminho para transformar sua carreira e ganhar em dólar.
           </p>
         </div>
-        <div className="mt-16 max-w-md mx-auto">
+        <div className="mt-16 max-w-xs mx-auto">
           <style>{`
             wistia-player[media-id='nbps2ualhu']:not(:defined) { 
               background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/nbps2ualhu/swatch'); 
